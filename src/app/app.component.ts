@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-root', //nome do componente que fica no html
+  templateUrl: './app.component.html', //html a ser utilizado
+  styleUrls: ['./app.component.css'] //css a ser utilizado
 })
 export class AppComponent {
-  title = 'app';
+  title = 'alurapic';
+  description = 'Zelda';
+  url = "https://store.nintendo.com.br/media/catalog/product/cache/1aff59ff6f21b2058ac5563c018426d7/z/e/zeldabow_hero_2.jpg";
 }
+ 
