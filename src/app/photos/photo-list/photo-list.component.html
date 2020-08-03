@@ -1,14 +1,6 @@
-<div class="text-center mt-3 mb-3">
-    <form>
-        <i class="fa fa-search mr-2"></i> <!-- utiliza o font awesome-->
-        <input
-            class="rounded"
-            type="search"
-            placeholder="search..."
-            autofocus
-            (keyup)="debounce.next($event.target.value)" > <!-- pega o valor do input com o evento keyup e joga na propriedade filter-->
-    </form>
-</div>
+<ap-search 
+    (onTyping)="filter = $event" [value]="filter">
+</ap-search>
 <ap-photos [photos]="photos | filterByDescription: filter"> </ap-photos> <!-- recebe dois parametros -->
 
 
